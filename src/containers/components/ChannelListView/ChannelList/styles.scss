@@ -1,0 +1,237 @@
+/** All stylings related to channelList and ChannelListCards shall add here **/
+
+/* .channel-list-view {
+	width: 60% ;
+    height: 820px;
+} */
+.chatListCardBox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid var(--bordercolor);
+}
+
+.searchMessageList:hover {
+  background-color: #2b343d !important;
+}
+
+.lightSearchMessageList:hover {
+  background-color: #f5f6f6 !important;
+}
+
+.chatListAvatar {
+  width: 48px;
+}
+.inchannel-search {
+  display: flex;
+  margin-left: 15px;
+  margin-right: -5px;
+  z-index: 10;
+}
+.other-channel-tab {
+  border-bottom: 1px solid var(--bordercolor);
+}
+.other-channel-tab > p {
+  /* color: black !important; */
+  /* background: #f3f1f1; */
+  padding: 8px;
+  margin: 0px;
+  color: var(--color);
+}
+
+.inchannel-search > div {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.inchannel-search svg {
+  width: 20px;
+  height: 20px;
+  color: var(--stokecolor);
+  stroke: var(--stokecolor);
+}
+.chatListAvatar .ant-avatar {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.8;
+  color: #000;
+}
+.chatListAvatar .ant-avatar-string {
+  position: static;
+  margin: 0;
+}
+.chatListDetails {
+  width: calc(100% - 48px);
+  padding-left: 10px;
+}
+.chatListUpper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 2px;
+}
+.chatListUpper h4 {
+  width: calc(100% - 60px);
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color);
+}
+.chatListUpper span {
+  width: 60px;
+  text-align: right;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  font-size: 10px;
+  color: var(--timecolor);
+  // color: var(--chatHeaderText);
+  // font-weight: 700;
+}
+.timestamp span {
+  color: var(--timecolor);
+  // color: var(--chatHeaderText);
+  // font-weight: 700;
+}
+.chatListLower {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.listLowerText {
+  width: calc(100% - 70px);
+  color: var(--color);
+  padding-right: 10px;
+}
+.countChatList {
+  width: 70px;
+  text-align: right;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+.countChatList span {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+.muteListIcon {
+  margin-right: 10px;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.muteListIcon i.fa {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  color: var(--color);
+}
+.muteListIcon .fa-volume-off {
+  font-size: 25px;
+}
+.muteListIcon .fa-times {
+  font-size: 11px;
+}
+.chatListLower p {
+  margin: 0;
+}
+/* .ant-avatar-string {
+  position: absolute;
+  left: 49%;
+  margin-left: -4px;
+  margin-top: -2px;
+  transform-origin: 0 center;
+} */
+
+.ant-scroll {
+  height: 92%;
+  overflow: hidden;
+  color: red;
+}
+
+.ant-scroll:hover {
+  overflow-y: overlay;
+}
+
+.ant-scroll:hover::-webkit-scrollbar-track {
+  /* border: 1px solid white; */
+  background-color: white;
+}
+.ant-scroll::-webkit-scrollbar {
+  width: 1px;
+}
+.ant-scroll:hover::-webkit-scrollbar {
+  width: 1px;
+}
+.ant-scroll:hover::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+.channel-list {
+  height: 100%;
+  width: 400px;
+  border-right: 1px solid var(--bordercolor);
+  padding-bottom: 10px;
+  background: var(--inputbgm);
+}
+.channel-list .ant-card-bordered {
+  border-right: 0;
+}
+.ant-card-body {
+  /*padding: 1px;*/
+  margin-top: -15px !important;
+  margin-bottom: 30px;
+  height: 30px;
+  border: 0px solid white;
+}
+
+.search-filter {
+  /* height: 8%; */
+  /* width: 98%; */
+}
+
+.searh-filter,
+.ant-input-affix-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 83%;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: -4.4285;
+  background-color: #fff;
+  background-image: none;
+  /* border: 1px solid #d9d9d9; */
+  border-radius: 2px;
+  transition: all 0.3s;
+  display: inline-flex;
+}
+
+.no-result {
+  color: black;
+  padding: 8px;
+  font-size: 12px;
+}

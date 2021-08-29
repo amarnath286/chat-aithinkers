@@ -1,0 +1,158 @@
+/** All layout styles shall add here **/
+
+.ant-layout-header .ant-menu {
+  line-height: inherit;
+  background-color: var(--background-color);
+  height: 22px;
+  padding-top: 7px;
+}
+.ant-menu-horizontal {
+  border-bottom: none !important;
+}
+.menu-outline {
+  /* line-height: inherit; */
+  font-size: '50px';
+}
+
+.anticon svg {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.ant-menu-submenu-title {
+  /*padding: 0;*/
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/*.ant-menu-item, .ant-menu-submenu-title:hover {
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}*/
+
+.main-menu-lines {
+  width: '100%';
+  background-color: '#5682a3' !important;
+}
+.chart-search-icon {
+  width: 20px;
+  color: var(--menuicon);
+  cursor: pointer;
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+  position: relative;
+  display: block;
+  margin: 0;
+  top: -6px;
+  padding: 0 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s,
+    padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/*.sub-menu {
+	font-size: '24px';
+	margin-left: '20px';
+	color: 'white';
+	background-color: '#5682a3' !important;
+}*/
+
+/*.ant-col-5 {
+    display: 'block';
+    background-color: '#5682a3';
+    flex: '0 0 20.83333333%';
+    max-width: '22.83333333%';
+}*/
+.ant-menu-submenu11 div .menu-outline {
+  color: var(--menuicon);
+}
+.ant-menu-submenu11 div .ant-menu-title-content {
+  color: var(--logotextcolor);
+}
+.ant-card-body {
+  padding: '3px' !important;
+  height: 49px;
+}
+.headerInner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 68px;
+  background: var(--background-color);
+  border: 1px solid var(--bordercolor);
+}
+.headerLeftMenu {
+  width: 400px;
+  border-right: 1px solid var(--bordercolor);
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  padding: 23px 0;
+}
+.centerBox {
+  width: calc(100% - 400px - 50px);
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  text-align: center;
+}
+.centerBox span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color);
+  margin-bottom: 4px;
+}
+.centerBox .noChannelHeader {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.searchHeader {
+  width: 50px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+.headerMenuIcon {
+  width: 50px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+.chatHeaderDrop p {
+  padding-right: 20px;
+  margin-bottom: 0;
+  color: var(--color);
+  cursor: pointer;
+}
+.chatHeaderDrop .iconCircle {
+  background-color: var(--menuicon) !important;
+}
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .headerLeftMenu {
+    width: 300px;
+  }
+  .centerBox {
+    width: calc(100% - 300px - 50px - 50px);
+  }
+}
